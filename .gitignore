@@ -1,0 +1,22 @@
+# OS / editor artefacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (used for the local dev-server only)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment files — never commit real API keys
+.env
+.env.local
+.env.*.local
+
+# Build / distribution output
+dist/
+build/
+out/

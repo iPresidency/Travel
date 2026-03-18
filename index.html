@@ -6,6 +6,22 @@
   <meta name="description" content="RetreatX Costa Rica — Curated healing, yoga, and adventure retreats. Secure, exclusive, and powered by the most sustainable energy network in the tropics." />
   <title>RetreatX Costa Rica — Find Your Frequency</title>
 
+  <!-- Security headers (supplement server-level _headers / netlify.toml) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                 font-src 'self' https://fonts.gstatic.com;
+                 img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com;
+                 script-src 'self' https://maps.googleapis.com;
+                 connect-src 'self';
+                 frame-src 'none';
+                 object-src 'none';
+                 base-uri 'self';
+                 form-action 'self';" />
+
   <!-- Preconnect for Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
