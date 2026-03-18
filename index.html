@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RetreatX Costa Rica — Curated healing, yoga, and adventure retreats. Secure, exclusive, and powered by the most sustainable energy network in the tropics." />
+  <title>RetreatX Costa Rica — Find Your Frequency</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">Retreat<span>X</span></a>
+
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html#map">Retreat Map</a></li>
+      <li><a href="index.html#register">Join</a></li>
+      <li><a href="index.html#why">Why RetreatX</a></li>
+      <li><a href="ecosystem.html">Our Ecosystem</a></li>
+      <li><a href="dashboard.html" class="nav__cta">My Dashboard</a></li>
+    </ul>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Hero">
+
+    <!-- Video background -->
+    <div class="hero__video-bg" aria-hidden="true">
+      <!--
+        Production: Replace this with an actual drone-footage video
+        <video autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+          <source src="assets/video/hero-drone.mp4" type="video/mp4" />
+        </video>
+      -->
+      <!-- Fallback gradient for demo -->
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#020e02 0%,#041a04 30%,#0d2a0d 60%,#051a10 100%);"></div>
+    </div>
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__tag" aria-label="Location tag">Costa Rica · Pura Vida · Est. 2024</div>
+
+      <h1>
+        Find Your <span class="highlight">Frequency.</span><br />
+        Experience the Ultimate<br />Transformation.
+      </h1>
+
+      <p class="hero__subline">
+        Entdecken Sie kuratierte Heilungs-, Yoga- und Abenteuer-Retreats in Costa Rica.
+        Sicher, exklusiv und unterstützt durch das nachhaltigste Energie-Netzwerk der Tropen.
+      </p>
+
+      <div class="hero__buttons">
+        <a href="#map" class="btn btn-primary">
+          🗺️ Explore Interactive Map
+        </a>
+        <a href="#register" class="btn btn-outline">
+          ⚡ Join the Elite
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       LABYRINTH DIVIDER
+  ════════════════════════════════════════════════ -->
+  <div class="labyrinth-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <!-- Simplified labyrinth / meander pattern -->
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(0,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(100,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(200,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(300,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(400,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(500,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(600,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(700,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(800,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(900,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(1000,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(1100,0)"/>
+    </svg>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       INTERACTIVE RETREAT MAP
+  ════════════════════════════════════════════════ -->
+  <section class="map-section" id="map" aria-label="Interactive retreat map">
+    <div class="section__header container reveal">
+      <span class="section__tag">Destination Intelligence</span>
+      <h2>Explore Costa Rica's<br /><span style="color:var(--neon-green)">Transformation Zones</span></h2>
+      <p>Click any pin to discover retreat packages, pricing, and direct booking through your MyCompany dashboard.</p>
+    </div>
+
+    <!-- Map container — populated by JS -->
+    <div id="retreat-map" role="region" aria-label="Costa Rica retreat map with interactive pins"></div>
+
+    <!-- Optional: real Google Maps with API key (uncomment and add key) -->
+    <!--
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initGoogleMap"
+      async defer
+    ></script>
+    -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       LABYRINTH DIVIDER
+  ════════════════════════════════════════════════ -->
+  <div class="labyrinth-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(0,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(100,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(200,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(300,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(400,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(500,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(600,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(700,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(800,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(900,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(1000,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(1100,0)"/>
+    </svg>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       REGISTRATION — THE SECURE VAULT
+  ════════════════════════════════════════════════ -->
+  <section class="section register-section" id="register" aria-label="Registration">
+    <div class="container">
+      <div class="register-grid">
+
+        <!-- Left: Benefits -->
+        <div class="reveal">
+          <span class="section__tag">Member Access</span>
+          <h2>Ihr persönliches<br /><span style="color:var(--neon-green)">Portal zur<br />Transformation.</span></h2>
+          <p style="color:var(--text-secondary);margin-top:1rem;margin-bottom:2.5rem;font-size:0.95rem;">
+            Secure, exclusive access to Costa Rica's most transformative retreat experiences — all managed in one elegant dashboard.
+          </p>
+
+          <ul class="register__benefits">
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">✉️</div>
+              <div class="register__benefit-text">
+                <h4>Magic Link Login</h4>
+                <p>Kein Passwort vergessen – sicherer Zugang per E-Mail. One click and you're in your Secure Vault.</p>
+              </div>
+            </li>
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">🔒</div>
+              <div class="register__benefit-text">
+                <h4>Asset Storage</h4>
+                <p>Laden Sie Ihre Reiseversicherung und Ausweise direkt in den MyCompany-Safe hoch. GDPR-compliant.</p>
+              </div>
+            </li>
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">⚡</div>
+              <div class="register__benefit-text">
+                <h4>XScout Priority</h4>
+                <p>Bevorzugte Buchung für MotoXScout und NightXScout Services. First access to limited retreat slots.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reveal" style="transition-delay:0.15s;">
+          <div class="register__form-card">
+            <h3>Join the Elite</h3>
+            <p class="subtitle">Enter your email to receive a secure Magic Link and access your personal transformation portal.</p>
+
+            <form class="magic-link-form" action="#" method="post" novalidate aria-label="Magic link registration form">
+              <div class="form-group">
+                <label for="reg-email">E-Mail Adresse</label>
+                <input
+                  type="email"
+                  id="reg-email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                ✉️ Send Magic Link
+              </button>
+            </form>
+
+            <div class="form-success" role="alert" aria-live="polite"></div>
+
+            <p style="font-size:0.72rem;color:#444;margin-top:1.5rem;line-height:1.5;">
+              By continuing, you agree to our <a href="terms.html">Terms of Service</a> and
+              <a href="privacy.html">Privacy Policy</a> (GDPR compliant).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       LABYRINTH DIVIDER
+  ════════════════════════════════════════════════ -->
+  <div class="labyrinth-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(0,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(100,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(200,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(300,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(400,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(500,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(600,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(700,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(800,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(900,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(1000,0)"/>
+      <path d="M0,0 L40,0 L40,20 L20,20 L20,40 L60,40 L60,0 L100,0 L100,60 L0,60 Z" fill="#39FF14" opacity="0.15" transform="translate(1100,0)"/>
+    </svg>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       WHY RETREATX?
+  ════════════════════════════════════════════════ -->
+  <section class="section why-section" id="why" aria-label="Why RetreatX">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">The Powerhouse Factor</span>
+        <h2>Warum <span style="color:var(--neon-green)">RetreatX?</span></h2>
+        <p>Drei Säulen, die uns von jedem anderen Retreat-Anbieter unterscheiden.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card reveal">
+          <span class="why-card__number" aria-hidden="true">01</span>
+          <span class="why-card__icon" aria-hidden="true">☀️</span>
+          <h3>Solar-Powered Healing</h3>
+          <p>Unsere Basecamps produzieren 1.300 kWh/Monat aus Solarenergie. Ihr Aufenthalt ist vollständig CO₂-neutral und unterstützt das lokale AI-Rechenzentrum.</p>
+          <div class="why-card__stat" aria-label="Energy output">1,300 kWh/mo</div>
+        </div>
+
+        <div class="why-card reveal" style="transition-delay:.1s;">
+          <span class="why-card__number" aria-hidden="true">02</span>
+          <span class="why-card__icon" aria-hidden="true">🌱</span>
+          <h3>$680 Yield Philosophy</h3>
+          <p>Wir investieren in die Natur. Ein Teil der Erträge aus unserer AI-Rechenleistung fließt direkt in den Schutz der costaricanischen Regenwälder.</p>
+          <div class="why-card__stat" aria-label="Daily yield">$680 / day</div>
+        </div>
+
+        <div class="why-card reveal" style="transition-delay:.2s;">
+          <span class="why-card__number" aria-hidden="true">03</span>
+          <span class="why-card__icon" aria-hidden="true">🔭</span>
+          <h3>Expert Guiding</h3>
+          <p>Sie werden nicht allein gelassen. Ihr persönlicher RetreatXScout begleitet Sie von der Ankunft bis zur Abreise – für ein nahtloses Erlebnis.</p>
+          <div class="why-card__stat" aria-label="Scout guarantee">24/7 Scout</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       LABYRINTH DIVIDER
+  ════════════════════════════════════════════════ -->
+  <div class="labyrinth-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(0,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(100,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(200,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(300,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(400,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(500,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(600,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(700,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(800,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(900,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(1000,0)"/>
+      <path d="M0,60 L40,60 L40,40 L20,40 L20,20 L60,20 L60,60 L100,60 L100,0 L0,0 Z" fill="#39FF14" opacity="0.15" transform="translate(1100,0)"/>
+    </svg>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       ECOSYSTEM TEASER
+  ════════════════════════════════════════════════ -->
+  <section class="section ecosystem-teaser" id="ecosystem" aria-label="The powerhouse network">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">The Network</span>
+        <h2>The Powerhouse <span style="color:var(--neon-green)">Network</span></h2>
+        <p>RetreatX is part of an interconnected ecosystem of sustainability, technology, and transformation projects.</p>
+      </div>
+
+      <div class="ecosystem-grid">
+
+        <a href="ecosystem.html#wolaba" class="ecosystem-tile reveal">
+          <span class="ecosystem-tile__icon" aria-hidden="true">🏍️</span>
+          <span class="ecosystem-tile__name">Wolaba X</span>
+          <span class="ecosystem-tile__desc">Die Elite-Agentur für spezialisierte Scouts — Moto, Night, Wildlife.</span>
+        </a>
+
+        <a href="dashboard.html" class="ecosystem-tile reveal" style="transition-delay:.05s;">
+          <span class="ecosystem-tile__icon" aria-hidden="true">🔐</span>
+          <span class="ecosystem-tile__name">MyCompany</span>
+          <span class="ecosystem-tile__desc">Ihr Dashboard für Asset-Management, Versicherungen und Buchungen.</span>
+        </a>
+
+        <a href="ecosystem.html#novalux" class="ecosystem-tile reveal" style="transition-delay:.1s;">
+          <span class="ecosystem-tile__icon" aria-hidden="true">🏛️</span>
+          <span class="ecosystem-tile__name">Novalux</span>
+          <span class="ecosystem-tile__desc">High-End Real Estate und nachhaltige Entwicklungsprojekte.</span>
+        </a>
+
+        <a href="ecosystem.html#rastarica" class="ecosystem-tile reveal" style="transition-delay:.15s;">
+          <span class="ecosystem-tile__icon" aria-hidden="true">🌴</span>
+          <span class="ecosystem-tile__name">Rastarica</span>
+          <span class="ecosystem-tile__desc">Nachhaltige Entwicklung im Einklang mit der costaricanischen Natur.</span>
+        </a>
+
+        <a href="ecosystem.html#7cielos" class="ecosystem-tile reveal" style="transition-delay:.2s;">
+          <span class="ecosystem-tile__icon" aria-hidden="true">✨</span>
+          <span class="ecosystem-tile__name">7 Cielos</span>
+          <span class="ecosystem-tile__desc">Luxus-Akkommodation im Einklang mit den sieben Ebenen des Bewusstseins.</span>
+        </a>
+
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;" class="reveal" style="transition-delay:.25s;">
+        <a href="ecosystem.html" class="btn btn-outline">Explore Full Ecosystem →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand column -->
+        <div class="footer__brand">
+          <div class="logo">Retreat<span>X</span></div>
+          <p>
+            Curated healing, yoga, and adventure retreats in Costa Rica.
+            Solar-powered. Secure. Transformational.
+          </p>
+          <div class="footer__payment-icons" aria-label="Accepted payment methods">
+            <div class="payment-badge" title="Bitcoin"><span class="icon" aria-hidden="true">₿</span> BTC</div>
+            <div class="payment-badge" title="Ethereum"><span class="icon" aria-hidden="true">⟠</span> ETH</div>
+            <div class="payment-badge" title="USDC Stablecoin"><span class="icon" aria-hidden="true">💵</span> USDC</div>
+            <div class="payment-badge" title="Credit Card"><span class="icon" aria-hidden="true">💳</span> Visa/MC</div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer__nav-col" aria-label="Footer navigation: Quick Links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html#map">Retreat Map</a></li>
+            <li><a href="index.html#register">Join the Elite</a></li>
+            <li><a href="index.html#why">Why RetreatX</a></li>
+            <li><a href="ecosystem.html">Our Ecosystem</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+          </ul>
+        </nav>
+
+        <!-- Destinations -->
+        <nav class="footer__nav-col" aria-label="Footer navigation: Destinations">
+          <h5>Destinations</h5>
+          <ul>
+            <li><a href="index.html#map">Nosara — Yoga Capital</a></li>
+            <li><a href="index.html#map">Santa Teresa — Surf &amp; Soul</a></li>
+            <li><a href="index.html#map">Puerto Viejo (Wolaba)</a></li>
+            <li><a href="index.html#map">Osa Peninsula — Wildlife</a></li>
+          </ul>
+        </nav>
+
+        <!-- Legal -->
+        <nav class="footer__nav-col" aria-label="Footer navigation: Legal">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html#gdpr">GDPR</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__warranty" aria-label="Infrastructure warranty">
+          <span class="icon" aria-hidden="true">🔆</span>
+          <span>Infrastructure backed by a <strong>40-year PV warranty.</strong></span>
+        </div>
+
+        <ul class="footer__legal-links" aria-label="Legal links">
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <p class="footer__copyright">
+        © 2024 RetreatX Costa Rica. All rights reserved. | GDPR Compliant | Secure Payments via Web3 &amp; Stripe.
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
