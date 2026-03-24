@@ -219,9 +219,9 @@
         <h4>${r.tagline}</h4>
         <p>${r.description}</p>
         <div class="map-popup__price">${r.price}</div>
-        <a href="https://mycompany.retreatx.com/book?location=${r.id}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          Book Now via MyCompany
-        </a>
+        <button class="btn btn-primary map-popup__book-btn" data-retreat="${r.id}" style="width:100%;justify-content:center;">
+          🗓 Register & Book
+        </button>
       </div>
     `).join('')}
   `;
@@ -241,6 +241,16 @@
     btn.addEventListener('click', () => {
       const id = btn.dataset.close;
       closePopup(id);
+    });
+  });
+
+  // Attach book / register button listeners
+  document.querySelectorAll('.map-popup__book-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.retreat;
+      const retreat = retreats.find(r => r.id === id);
+      closePopup(id);
+      if (retreat) selectRetreatForBooking(retreat);
     });
   });
 
@@ -292,6 +302,77 @@
   function closePopup(id) {
     const popup = document.getElementById('popup-' + id);
     if (popup) popup.classList.remove('active');
+  }
+
+  function selectRetreatForBooking(retreat) {
+    // Show banner with retreat details above the registration form
+    const banner = document.getElementById('booking-retreat-banner');
+    if (banner) {
+      banner.innerHTML = `
+        <div class="booking-retreat-banner__inner">
+          <div class="booking-retreat-banner__emoji" aria-hidden="true">${retreat.emoji}</div>
+          <div class="booking-retreat-banner__info">
+            <div class="booking-retreat-banner__label">Selected Retreat</div>
+            <h4 class="booking-retreat-banner__name">${retreat.name}</h4>
+            <div class="booking-retreat-banner__tagline">${retreat.tagline}</div>
+            <p class="booking-retreat-banner__desc">${retreat.description}</p>
+            <div class="booking-retreat-banner__price">${retreat.price}</div>
+          </div>
+          <button class="booking-retreat-banner__clear" aria-label="Clear retreat selection">✕</button>
+        </div>
+      `;
+      banner.style.display = 'block';
+      banner.style.animation = 'fadeIn 0.35s ease';
+      banner.querySelector('.booking-retreat-banner__clear').addEventListener('click', () => {
+        banner.style.display = 'none';
+        resetBookingForm();
+      });
+    }
+
+    // Update form card heading and subtitle
+    const formCard = document.querySelector('.register__form-card');
+    if (formCard) {
+      const heading = formCard.querySelector('h3');
+      if (heading) heading.textContent = 'Book ' + retreat.name;
+      const subtitle = formCard.querySelector('.subtitle');
+      if (subtitle) subtitle.textContent =
+        'Enter your email to secure your spot at ' + retreat.name + '. You will receive a Magic Link to confirm your booking.';
+    }
+
+    // Track selected retreat in a hidden form input
+    const form = document.querySelector('.magic-link-form');
+    if (form) {
+      let hiddenInput = form.querySelector('input[name="retreat"]');
+      if (!hiddenInput) {
+        hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'retreat';
+        form.appendChild(hiddenInput);
+      }
+      hiddenInput.value = retreat.id;
+    }
+
+    // Smooth-scroll to the register section
+    const registerSection = document.getElementById('register');
+    if (registerSection) {
+      registerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function resetBookingForm() {
+    const formCard = document.querySelector('.register__form-card');
+    if (formCard) {
+      const heading = formCard.querySelector('h3');
+      if (heading) heading.textContent = 'Join the Elite';
+      const subtitle = formCard.querySelector('.subtitle');
+      if (subtitle) subtitle.textContent =
+        'Enter your email to receive a secure Magic Link and access your personal transformation portal.';
+    }
+    const form = document.querySelector('.magic-link-form');
+    if (form) {
+      const hiddenInput = form.querySelector('input[name="retreat"]');
+      if (hiddenInput) hiddenInput.remove();
+    }
   }
 })();
 

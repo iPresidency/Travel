@@ -1,0 +1,12 @@
+{
+  "name": "retreatx-costa-rica",
+  "version": "1.0.0",
+  "description": "RetreatX Costa Rica — curated wellness retreats static website",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . --listen 8080 --single",
+    "dev": "npx serve . --listen 8080 --single"
+  },
+  "keywords": ["travel", "retreats", "costa-rica", "wellness"],
+  "license": "MIT"
+}
