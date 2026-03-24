@@ -1,0 +1,29 @@
+{
+  "name": "RetreatX Travel — Web Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {},
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Live Preview",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "npm install -g live-server",
+  "postStartCommand": "live-server --port=3000 --host=0.0.0.0 --no-browser .",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ecmel.vscode-html-css",
+        "zignd.html-css-class-completion",
+        "ritwickdey.LiveServer"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "liveServer.settings.port": 3000
+      }
+    }
+  }
+}
